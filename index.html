@@ -1,0 +1,390 @@
+```html
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Armadilhas que Derrubam Jovens</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        overflow: hidden;
+        background: #000;
+      }
+
+      .slide {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        padding: 60px;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .slide::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+      }
+
+      .slide * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .active {
+        display: flex;
+        animation: fade 0.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 25px;
+        color: #ffd700;
+      }
+
+      p {
+        font-size: 1.8rem;
+        max-width: 900px;
+        line-height: 1.8;
+      }
+
+      ul {
+        max-width: 1000px;
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 2;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .numero {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 20px;
+        opacity: 0.8;
+      }
+
+      .controles {
+        position: fixed;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+      }
+
+      button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 5px;
+      }
+
+      .prev {
+        background: #444;
+        color: white;
+      }
+
+      .next {
+        background: #2563eb;
+        color: white;
+      }
+
+      .destaque {
+        color: #4ade80;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.3rem;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        p,
+        ul {
+          font-size: 1.1rem;
+        }
+
+        .slide {
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="slide active"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1511632765486-a01980e01a18&quot;);
+      "
+    >
+      <div class="numero">1/10</div>
+
+      <h1>🔥 3 ARMADILHAS QUE DERRUBAM JOVENS</h1>
+
+      <p>Isaías 5:21-23</p>
+
+      <p class="destaque">"Decide hoje de que lado você vai estar."</p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1504052434569-70ad5836ab65&quot;);
+      "
+    >
+      <div class="numero">2/10</div>
+
+      <h2>📖 TEXTO BASE</h2>
+
+      <p>"Ai dos que se consideram sábios e se julgam inteligentes..."</p>
+
+      <br />
+
+      <p>
+        Deus mostra três armadilhas que podem destruir o futuro de um jovem.
+      </p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1521737604893-d14cc237f11d&quot;);
+      "
+    >
+      <div class="numero">3/10</div>
+
+      <h2>⚠ ARMADILHA #1</h2>
+
+      <h1>ORGULHO</h1>
+
+      <p>"A síndrome do sabe-tudo"</p>
+
+      <p>
+        Quem acha que não precisa ouvir ninguém acaba tropeçando no próprio ego.
+      </p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1517841905240-472988babdf9&quot;);
+      "
+    >
+      <div class="numero">4/10</div>
+
+      <h2>🤔 REFLEXÃO</h2>
+
+      <p>Você aceita correção?</p>
+
+      <p>Quando alguém te aconselha, você escuta ou se fecha?</p>
+
+      <p class="destaque">
+        A humildade abre portas. O orgulho fecha todas elas.
+      </p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c&quot;);
+      "
+    >
+      <div class="numero">5/10</div>
+
+      <h2>⚠ ARMADILHA #2</h2>
+
+      <h1>INTEMPERANÇA</h1>
+
+      <p>Sem freio. Sem limite.</p>
+
+      <ul>
+        <li>📱 Celular</li>
+        <li>🎮 Jogos</li>
+        <li>😡 Raiva</li>
+        <li>🎉 Festas</li>
+        <li>❤️ Relacionamentos</li>
+      </ul>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1500530855697-b586d89ba3ee&quot;);
+      "
+    >
+      <div class="numero">6/10</div>
+
+      <h2>DOMÍNIO PRÓPRIO</h2>
+
+      <p>Não é fazer tudo o que dá vontade.</p>
+
+      <p>É controlar suas vontades.</p>
+
+      <p class="destaque">
+        Se algo te domina mais que Deus, está ocupando o lugar errado.
+      </p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1509062522246-3755977927d7&quot;);
+      "
+    >
+      <div class="numero">7/10</div>
+
+      <h2>⚠ ARMADILHA #3</h2>
+
+      <h1>INJUSTIÇA</h1>
+
+      <ul>
+        <li>✖ Colar na prova</li>
+        <li>✖ Mentir para escapar</li>
+        <li>✖ Humilhar alguém</li>
+        <li>✖ Defender o errado</li>
+      </ul>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1450101499163-c8848c66ca85&quot;);
+      "
+    >
+      <div class="numero">8/10</div>
+
+      <h2>⚖ DEUS AMA A JUSTIÇA</h2>
+
+      <p>O mundo chama o errado de certo.</p>
+
+      <p>Mas Deus continua chamando o certo de certo.</p>
+
+      <p class="destaque">Caráter vale mais que popularidade.</p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1529156069898-49953e39b3ac&quot;);
+      "
+    >
+      <div class="numero">9/10</div>
+
+      <h2>🔥 PRA PENSAR</h2>
+
+      <p>Qual dessas armadilhas está mais perto de você hoje?</p>
+
+      <br />
+
+      <p>1️⃣ Orgulho</p>
+      <p>2️⃣ Falta de Limites</p>
+      <p>3️⃣ Injustiça</p>
+    </div>
+
+    <div
+      class="slide"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1507692049790-de58290a4334&quot;);
+      "
+    >
+      <div class="numero">10/10</div>
+
+      <h2>🙏 CONCLUSÃO</h2>
+
+      <p>Troque o orgulho por humildade.</p>
+
+      <p>Troque a falta de limites por domínio próprio.</p>
+
+      <p>Troque o jeitinho por justiça.</p>
+
+      <br />
+
+      <p class="destaque">
+        Deus não te chamou para ser mais um na multidão. Ele te chamou para ser
+        referência.
+      </p>
+
+      <br />
+
+      <p>O VALE DA DECISÃO É AGORA.</p>
+    </div>
+
+    <div class="controles">
+      <button class="prev" onclick="mudar(-1)">⬅ Anterior</button>
+      <button class="next" onclick="mudar(1)">Próximo ➡</button>
+    </div>
+
+    <script>
+      let atual = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function mostrar(i) {
+        slides.forEach((s) => s.classList.remove("active"));
+        slides[i].classList.add("active");
+      }
+
+      function mudar(direcao) {
+        atual += direcao;
+
+        if (atual < 0) atual = 0;
+        if (atual >= slides.length) atual = slides.length - 1;
+
+        mostrar(atual);
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") {
+          mudar(1);
+        }
+
+        if (e.key === "ArrowLeft") {
+          mudar(-1);
+        }
+      });
+    </script>
+  </body>
+</html>
+```
